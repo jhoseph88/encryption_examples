@@ -1,0 +1,18 @@
+#ifndef Alice_pch
+#define Alice_pch
+#include <vector>
+#include <cmath>
+#include <stdlib.h>
+
+using namespace std;
+
+class Alice {
+    int p, q, n, totient, e, d;
+public:
+    Alice();
+    pair<int, int> send_public_key();
+    int gen_prime();
+    int compute_m(int c);
+};
+
+#endif /* Alice_pch */
